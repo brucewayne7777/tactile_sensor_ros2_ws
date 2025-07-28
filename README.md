@@ -217,6 +217,7 @@ ros2 run tactile_sensor_pkg tactile_publisher
 ---
 
 ## 📁 Repository Structure
+
 .
 ├── arduino/
 │   └── YOUR_ARDUINO_SKETCH.ino  # Add your Arduino sketch here
@@ -230,6 +231,7 @@ ros2 run tactile_sensor_pkg tactile_publisher
 │   ├── .gitignore              # Recommended for ROS 2 repos
 │   └── README.md               # This file!
 └── LICENSE                     # Your project's license file
+
 
 
 
@@ -250,6 +252,7 @@ ros2 run tactile_sensor_pkg tactile_publisher
 ## ✅ .gitignore for your ROS 2 Repository
 Create a .gitignore file at the root of your ros2_ws/ directory to prevent unnecessary files from being tracked by Git. This keeps your repository clean and manageable.
 
+```gitignore
 # ROS 2 build files
 build/
 install/
