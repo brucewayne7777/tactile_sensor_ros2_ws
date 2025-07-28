@@ -217,7 +217,7 @@ ros2 run tactile_sensor_pkg tactile_publisher
 ---
 
 ## 📁 Repository Structure
-
+```
 .
 ├── arduino/
 │   └── YOUR_ARDUINO_SKETCH.ino  # Add your Arduino sketch here
