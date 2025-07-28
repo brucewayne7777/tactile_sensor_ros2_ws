@@ -213,6 +213,8 @@ colcon build --packages-select tactile_sensor_pkg # Only needed if setup.py/pack
 source install/setup.bash
 ros2 run tactile_sensor_pkg tactile_publisher
 
+---
+
 📁 Repository Structure
 .
 ├── arduino/
@@ -228,7 +230,9 @@ ros2 run tactile_sensor_pkg tactile_publisher
 │   └── README.md               # This file!
 └── LICENSE                     # Your project's license file
 
-📌 Important Notes
+---
+
+### 📌 Important Notes
 Device Access Errors: If you're running into device access errors, double-check that /dev/ttyACM0 (or ttyUSB0) is accessible and that your user is indeed in the dialout group (you must restart your WSL terminal after adding yourself).
 
 USB Device Disconnection: You may need to reattach the USB device using usbipd attach if it becomes disconnected (e.g., after a WSL restart or unplugging the Arduino).
@@ -236,6 +240,8 @@ USB Device Disconnection: You may need to reattach the USB device using usbipd a
 Baud Rate: Ensure the baud rate in your Arduino sketch matches the baud rate configured in your tactile_publisher.py script.
 
 Message Type: The example tactile_publisher.py uses std_msgs/msg/Int32. Adjust this (Float32, String, etc.) and the parsing logic in your Python script to match the data type your Arduino sends.
+
+---
 
 ✅ .gitignore for your ROS 2 Repository
 Create a .gitignore file at the root of your ros2_ws/ directory to prevent unnecessary files from being tracked by Git. This keeps your repository clean and manageable.
@@ -253,5 +259,8 @@ __pycache__/
 # VSCode settings
 .vscode/
 
+---
+
 🧾 License
 This project is licensed under the MIT License. See the LICENSE file in the root of the repository for full details.
+---
