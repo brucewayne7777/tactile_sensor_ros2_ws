@@ -212,9 +212,11 @@ cd ~/ros2_ws
 colcon build --packages-select tactile_sensor_pkg # Only needed if setup.py/package.xml changed
 source install/setup.bash
 ros2 run tactile_sensor_pkg tactile_publisher
+```
 
+---
 
-### 📁 Repository Structure
+## 📁 Repository Structure
 .
 ├── arduino/
 │   └── YOUR_ARDUINO_SKETCH.ino  # Add your Arduino sketch here
@@ -231,18 +233,21 @@ ros2 run tactile_sensor_pkg tactile_publisher
 
 
 
-### 📌 Important Notes
-Device Access Errors: If you're running into device access errors, double-check that /dev/ttyACM0 (or ttyUSB0) is accessible and that your user is indeed in the dialout group (you must restart your WSL terminal after adding yourself).
+---
 
-USB Device Disconnection: You may need to reattach the USB device using usbipd attach if it becomes disconnected (e.g., after a WSL restart or unplugging the Arduino).
+## 📌 Important Notes
 
-Baud Rate: Ensure the baud rate in your Arduino sketch matches the baud rate configured in your tactile_publisher.py script.
+- **Device Access Errors**: If you're running into device access errors, double-check that `/dev/ttyACM0` (or `ttyUSB0`) is accessible and that your user is indeed in the `dialout` group (you must restart your WSL terminal after adding yourself).
 
-Message Type: The example tactile_publisher.py uses std_msgs/msg/Int32. Adjust this (Float32, String, etc.) and the parsing logic in your Python script to match the data type your Arduino sends.
+- **USB Device Disconnection**: You may need to reattach the USB device using `usbipd attach` if it becomes disconnected (e.g., after a WSL restart or unplugging the Arduino).
+
+- **Baud Rate**: Ensure the baud rate in your Arduino sketch matches the baud rate configured in your `tactile_publisher.py` script.
+
+- **Message Type**: The example `tactile_publisher.py` uses `std_msgs/msg/Int32`. Adjust this (`Float32`, `String`, etc.) and the parsing logic in your Python script to match the data type your Arduino sends.
 
 ---
 
-✅ .gitignore for your ROS 2 Repository
+## ✅ .gitignore for your ROS 2 Repository
 Create a .gitignore file at the root of your ros2_ws/ directory to prevent unnecessary files from being tracked by Git. This keeps your repository clean and manageable.
 
 # ROS 2 build files
@@ -260,6 +265,6 @@ __pycache__/
 
 ---
 
-🧾 License
+## 🧾 License
+
 This project is licensed under the MIT License. See the LICENSE file in the root of the repository for full details.
----
