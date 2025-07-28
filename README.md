@@ -213,9 +213,8 @@ colcon build --packages-select tactile_sensor_pkg # Only needed if setup.py/pack
 source install/setup.bash
 ros2 run tactile_sensor_pkg tactile_publisher
 
----
 
-📁 Repository Structure
+### 📁 Repository Structure
 .
 ├── arduino/
 │   └── YOUR_ARDUINO_SKETCH.ino  # Add your Arduino sketch here
@@ -230,7 +229,7 @@ ros2 run tactile_sensor_pkg tactile_publisher
 │   └── README.md               # This file!
 └── LICENSE                     # Your project's license file
 
----
+
 
 ### 📌 Important Notes
 Device Access Errors: If you're running into device access errors, double-check that /dev/ttyACM0 (or ttyUSB0) is accessible and that your user is indeed in the dialout group (you must restart your WSL terminal after adding yourself).
