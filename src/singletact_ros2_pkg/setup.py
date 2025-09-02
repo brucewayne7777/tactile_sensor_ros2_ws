@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'tactile_sensor_pkg'
+package_name = 'singletact_ros2_pkg'
 
 setup(
     name=package_name,
@@ -10,19 +10,17 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', ['tactile_sensor_pkg/launch/tactile_sensor.launch.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='sudhaavan',
-    maintainer_email='sudhaavan@todo.todo',
+    maintainer_email='sudhavan@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'tactile_publisher = tactile_sensor_pkg.tactile_publisher:main',
-            'tactile_visualizer = tactile_sensor_pkg.tactile_visualizer:main'
+            'singletact_ros2 = singletact_ros2_pkg.singletact_ros2:main'
         ],
     },
 )
