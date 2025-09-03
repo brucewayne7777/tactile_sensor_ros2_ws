@@ -9,8 +9,6 @@ __pycache__/
 *.pyc
 *.pyo
 
-# VSCode settings
-.vscode/
 
 # irrelevant packages
 /src/servo_controller/
