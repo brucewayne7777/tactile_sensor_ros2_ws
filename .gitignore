@@ -13,5 +13,5 @@ __pycache__/
 .vscode/
 
 # irrelevant packages
-/servo_controller/
-/singletact_ros2_pkg/
+/src/servo_controller/
+/src/singletact_ros2_pkg/
