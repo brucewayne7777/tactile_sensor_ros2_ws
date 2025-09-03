@@ -1,6 +1,6 @@
 # Tactile Sensor ROS 2 Bridge: Arduino to ROS 2 Jazzy with Python🖐️📡
 
-This project provides a robust Python bridge to connect an **Arduino-based tactile sensor** to **ROS 2 Jazzy**. It leverages a Python node for serial communication, enabling seamless data flow from your physical sensor to your ROS 2 ecosystem.
+This project provides a robust Python bridge to connect an **Arduino-based tactile sensor** to **ROS 2 Jazzy**. It leverages a Python node for serial communication, enabling seamless data flow from your physical sensor to your ROS2 ecosystem.
 
 ---
 
