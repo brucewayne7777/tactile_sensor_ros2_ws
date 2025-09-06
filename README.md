@@ -8,11 +8,11 @@ This project provides a bridge between an Arduino-based tactile sensor and ROS 2
 
 ## Packages
 
-*   [`tactile_sensor_pkg`](./src/tactile_sensor_pkg/README.md): The main ROS 2 package containing the Python node for serial communication and data publishing. For detailed setup and usage instructions, please refer to the package's `README.md`.
+*   [`tactile_sensor_pkg`](./src/tactile_sensor_pkg/): The main ROS 2 package containing the Python node for serial communication and data publishing. For detailed setup and usage instructions, please refer to the package's `README.md`.
 
 ## Arduino Firmware
 
-*   [`arduino_code`](./arduino_code/README.md): Contains the Arduino sketch for the tactile sensor. See the README inside for more details.
+*   [`arduino_code`](./arduino_code/): Contains the Arduino sketch for the tactile sensor. See the README inside for more details.
 
 ## License
 
