@@ -17,6 +17,27 @@ The package publishes to the following topics:
 - `/tactile_binary_array` (std_msgs/Int32MultiArray): Binary touch states (0/1) for each sensor
 - `/tactile_touch_detected` (std_msgs/Bool): Overall touch detection (True if any sensor is touched)
 
+## 📁 Repository Structure
+```
+.
+├── arduino_code/
+│   ├── README.md
+│   └── YOUR_ARDUINO_SKETCH.ino
+├── build/
+├── install/
+├── log/
+├── src/
+│   └── tactile_sensor_pkg/
+│       ├── tactile_sensor_pkg/
+│       │   └── tactile_publisher.py
+│       ├── package.xml
+│       ├── README.md
+│       └── setup.py
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
 ## Installation
 
 1. Install the required Python dependencies:
@@ -110,8 +131,8 @@ The visualizer provides three real-time plots:
 
 ## Dependencies
 
-- ROS2 (tested with Humble)
-- Python 3.8+
+- ROS2 (tested with Jazzy)
+- Python 3+
 - matplotlib
 - numpy
 - pyserial
